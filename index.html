@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Frase al azar</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      text-align: center;
+    }
+    #frase {
+      font-size: 28px;
+      max-width: 700px;
+    }
+  </style>
+</head>
+<body>
+
+<div id="frase"></div>
+
+<script>
+  const frases = [
+    "Primera frase",
+    "Segunda frase",
+    "Tercera frase",
+    "Otra más",
+    "La última por ahora"
+  ];
+
+  const randomIndex = Math.floor(Math.random() * frases.length);
+  document.getElementById("frase").innerText = frases[randomIndex];
+</script>
+
+</body>
+</html>
